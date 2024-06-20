@@ -1,0 +1,18 @@
+{% include 'flashes.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Cost</title>
+</head>
+<body>
+    <h1>Change Cost</h1>
+    <form action="/doctor/change_cost" method="POST">
+        <label for="new_cost">New Cost:</label>
+        <input type="cost" id="new_cost" name="new_cost" required>
+        <br>
+        <button type="submit">Change Cost</button>
+    </form>
+</body>
+</html>

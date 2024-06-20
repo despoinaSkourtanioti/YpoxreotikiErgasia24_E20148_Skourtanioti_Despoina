@@ -1,0 +1,18 @@
+{% include 'flashes.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Patient</title>
+</head>
+<body>
+    <h1>Delete Patient</h1>
+    <form action="/admin/delete_patient" method="POST">
+        <label for="patient_username">Patient Username:</label>
+        <input type="text" id="patient_username" name="patient_username" required>
+        <br>
+        <button type="submit">Delete Patient</button>
+    </form>
+</body>
+</html>

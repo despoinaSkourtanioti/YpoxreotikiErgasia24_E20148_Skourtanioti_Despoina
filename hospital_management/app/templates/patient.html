@@ -1,0 +1,23 @@
+{% include 'flashes.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Patient Dashboard</h1>
+        <div class="mt-4">
+            <a href="/patient/appointment" class="btn btn-primary btn-lg">Make an appointment</a>
+            <a href="/patient/view_appointments" class="btn btn-secondary btn-lg">See all future appointments</a>
+        </div>
+        <div class="mt-4">
+            <a class="btn btn-danger" href="/logout">Logout</a>
+        </div>
+    </div>
+    
+</body>
+</html>

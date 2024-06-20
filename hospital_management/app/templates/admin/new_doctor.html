@@ -1,0 +1,42 @@
+{% include 'flashes.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Doctor</title>
+</head>
+<body>
+    <h1>New Doctor</h1>
+    <form action="/admin/new_doctor" method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        <br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="cost">Cost:</label>
+        <input type="number" id="cost" name="cost" required>
+        <br>
+        <label for="specialty">Specialty:</label>
+        <select id="specialty" name="specialty" required>
+            <option value="Radiologist">Radiologist</option>
+            <option value="Hematologist">Hematologist</option>
+            <option value="Allergist">Allergist</option>
+            <option value="General Practitioner">General Practitioner</option>
+            <option value="Cardiologist">Cardiologist</option>
+        </select>
+        <br>
+        <button type="submit">Create Doctor</button>
+    </form>
+</body>
+</html>

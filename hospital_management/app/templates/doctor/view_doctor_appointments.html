@@ -1,0 +1,27 @@
+{% include 'flashes.html' %}
+{% if appointments %}
+<div class="container">
+    <h1>Future Appointments</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Patient Name</th>
+                <th>Reason</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for appointment in appointments %}
+                <tr>
+                    <td>{{ appointment.date }}</td>
+                    <td>{{ appointment.time }}</td>
+                    <td>{{ appointment.patient_first_name }} {{ appointment.patient_last_name }}</td>
+                    <td>{{ appointment.reason }}</td>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% else %}
+    <p>No appointments booked at the moment.</p>
+{% endif %}

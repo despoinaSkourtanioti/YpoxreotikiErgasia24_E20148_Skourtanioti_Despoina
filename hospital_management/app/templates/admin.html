@@ -1,0 +1,24 @@
+{% include 'flashes.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Admin Dashboard</h1>
+        <div class="mt-4">
+            <a href="/admin/new_doctor" class="btn btn-primary btn-lg">New doctor</a>
+            <a href="/admin/change_doctor_password" class="btn btn-secondary btn-lg">Change a dr's password</a>
+            <a href="/admin/delete_doctor" class="btn btn-secondary btn-lg">Delete dr</a>
+            <a href="/admin/delete_patient" class="btn btn-secondary btn-lg">Delete patient</a>
+        </div>
+        <div class="mt-4">
+            <a class="btn btn-danger" href="/logout">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

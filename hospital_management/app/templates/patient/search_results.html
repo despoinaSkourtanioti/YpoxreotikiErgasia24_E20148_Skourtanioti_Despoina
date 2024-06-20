@@ -1,0 +1,38 @@
+{% include 'flashes.html' %}
+<div class="container">
+    <h1>Available Doctors</h1>
+    {% if doctors %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Doctor</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for doctor in doctors %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ doctor.first_name }} {{ doctor.last_name }}</td>
+                    <td>
+                        <form action="/patient/book_appointment" method="post">
+                            <input type="hidden" name="doctor_username" value="{{ doctor.username }}">
+                            <input type="hidden" name="doctor_first_name" value="{{ doctor.first_name }}">
+                            <input type="hidden" name="doctor_last_name" value="{{ doctor.last_name }}">                            
+                            <input type="hidden" name="date" value="{{ date }}">
+                            <input type="hidden" name="time" value="{{ time }}">
+                            <input type="hidden" name="specialty" value="{{ doctor.specialty }}">
+                            <input type="hidden" name="reason" value="{{ reason }}">
+                            <button type="submit">Book Appointment</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No available doctors found for the selected date, time and with that specialty.</p>        
+        <td><a href="{{ url_for('appointment') }}">Go back to booking an appointment</a></td>
+    {% endif %}
+</div>

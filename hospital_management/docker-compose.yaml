@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+    environment:
+      - SECRET_KEY=supersecretkey
+      - MONGO_URI=mongodb+srv://despoinaskourtanioti:<password>@cluster0.3vktqb6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/HospitalDB
+
+volumes:
+  mongo-data:
