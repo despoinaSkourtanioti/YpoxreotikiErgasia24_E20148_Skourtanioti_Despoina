@@ -45,6 +45,7 @@ Doctor Dashboard:
 Αλλαγή κόστους:
 ![Screenshot (380)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/89e0ee66-365e-4714-b6f0-dd7a9735b7f0)
 Register:
+![Screenshot (381)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/edeeba9d-2bcc-45b7-9a98-1cf97442fff3)
 Patient Dashboard:
 Αναζήτηση ραντεβού
 ![Screenshot (383)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/81244650-55c4-4cad-a4ed-0fb09d3e7a9d)
