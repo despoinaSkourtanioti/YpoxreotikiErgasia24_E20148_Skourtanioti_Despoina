@@ -1,10 +1,10 @@
 # YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina
 
-#Τεχνολογίες:
+# Τεχνολογίες:
 
 Python, Microframework Flask, Docker, MongoDB, HTML
 
-#Περιγραφή Αρχείων:
+# Περιγραφή Αρχείων:
 
 docker-compose.yml συνδέει τα container του server και της βάσης δεδομένων
 Dockerfile για τη δημιουργία image
@@ -13,7 +13,7 @@ run.py api με τα route
 requirements.txt τα requirements για να τρέξει το run.py
 app file με τα templates (HTML)
 
-#Τρόπος Εκτέλεσης:
+# Τρόπος Εκτέλεσης:
 
 1. Download των αρχείων
 2. Extract των αρχείων
@@ -21,7 +21,7 @@ app file με τα templates (HTML)
 4. ```docker-compose up --build```
 5. Σε ένα browser: localhost:5000
 
-#Τρόπος Χρήσης:
+# Τρόπος Χρήσης:
 
 Υπάρχουν 4 collection:
 1. users (RBAC)
@@ -56,7 +56,7 @@ password: @dm1n
 4. προβολή ραντεβού
 5. ακύρωση ραντεβού
 
-#Screenshots:
+# Screenshots:
 
 Home:
 ![Screenshot (376)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/a75eeb01-0426-493a-8802-c8ae520c9f94)
