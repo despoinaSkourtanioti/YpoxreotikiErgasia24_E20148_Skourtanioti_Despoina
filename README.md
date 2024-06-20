@@ -1,11 +1,33 @@
 # YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina
 
+Τεχνολογίες:
+Python, Microframework Flask, Docker, MongoDB, HTML
+
+Περιγραφή Αρχείων:
+docker-compose.yml συνδέει τα container του server και της βάσης δεδομένων
+Dockerfile για τη δημιουργία image
+initialize_db.py για την προσθήκη του admin στο db αν δεν είναι ήδη
+run.py api με τα route
+requirements.txt τα requirements για να τρέξει το run.py
+app file με τα templates (HTML)
+
+Τρόπος Εκτέλεσης:
+1. Download των αρχείων
+2. Extract των αρχείων
+3. CMD: CD στο directory του hospital_management
+4. # Command:
+To Run Docker-compose
+```
+# Flask run on port 5000
+docker-compose up
+```
+Τρόπος Χρήσης: 
 Υπάρχουν 4 collection:
 1. users (RBAC)
 2. doctors
 3. patients
 4. appointments
-   
+
 Admin credentials:
 Username: admin
 password: @dm1n
