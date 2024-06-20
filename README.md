@@ -43,7 +43,7 @@ Admin Dashboard:
 Doctor Dashboard:
 ![Screenshot (379)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/6c833e9f-1044-4734-98e1-2db2cd62686c)
 Αλλαγή κόστους:
-![Screenshot (387)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/c4313310-8a80-480c-afdd-bf898cc89e7c)
+![Screenshot (380)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/89e0ee66-365e-4714-b6f0-dd7a9735b7f0)
 Register:
 ![Screenshot (386)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/01c852be-c6d1-4642-8aea-0433031da780)
 Patient Dashboard:
@@ -57,7 +57,7 @@ Patient Dashboard:
 Προβολή λεπτομερειών:
 ![Screenshot (381)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/312d44d0-0696-4741-b9a8-6920ba667871)
 Προβολή ραντεβού signed in ως doctor:
-![Screenshot (380)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/89e0ee66-365e-4714-b6f0-dd7a9735b7f0)
+![Screenshot (387)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/c4313310-8a80-480c-afdd-bf898cc89e7c)
 Μετά τη διαγραφή του doctor από τον admin η προβολή ραντεβού signed in ως patient:
 ![Screenshot (388)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/5cb9ed23-b757-46f8-95fa-1da13c8a7947)
 
