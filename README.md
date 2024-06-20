@@ -35,11 +35,11 @@ password: @dm1n
 
 Screenshots:
 Home:
-![Screenshot (378)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/a00668fa-22e5-4350-bd32-a4640d4ddaeb)
+![Screenshot (376)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/a75eeb01-0426-493a-8802-c8ae520c9f94)
 Admin Dashboard:
 ![Screenshot (377)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/66980d60-d4b0-4605-9a52-aee4add86361)
 Δημιουργία doctor:
-![Screenshot (376)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/a75eeb01-0426-493a-8802-c8ae520c9f94)
+![Screenshot (378)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/a00668fa-22e5-4350-bd32-a4640d4ddaeb)
 Doctor Dashboard:
 ![Screenshot (388)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/5cb9ed23-b757-46f8-95fa-1da13c8a7947)
 Αλλαγή κόστους:
