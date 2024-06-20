@@ -47,13 +47,12 @@ Doctor Dashboard:
 Register:
 ![Screenshot (381)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/edeeba9d-2bcc-45b7-9a98-1cf97442fff3)
 Patient Dashboard:
+![Screenshot (367)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/1642c5ff-9a58-4f9e-bc42-d67921c82095)
 Αναζήτηση ραντεβού
 ![Screenshot (383)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/81244650-55c4-4cad-a4ed-0fb09d3e7a9d)
 Κράτηση ραντεβού
 ![Screenshot (384)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/d28e4365-67b2-4f2d-8dd3-c1286812889f)
-Προβολή ραντεβού:
-![Screenshot (381)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/312d44d0-0696-4741-b9a8-6920ba667871)
-Προβολή λεπτομερειών:
+Προβολή λεπτομερειών ραντεβού:
 ![Screenshot (386)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/38754e2d-135b-4e75-8277-e0b22b51f751)
 Προβολή ραντεβού signed in ως doctor:
 ![Screenshot (387)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/c4313310-8a80-480c-afdd-bf898cc89e7c)
