@@ -1,9 +1,11 @@
 # YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina
 
 Τεχνολογίες:
+
 Python, Microframework Flask, Docker, MongoDB, HTML
 
 Περιγραφή Αρχείων:
+
 docker-compose.yml συνδέει τα container του server και της βάσης δεδομένων
 Dockerfile για τη δημιουργία image
 initialize_db.py για την προσθήκη του admin στο db αν δεν είναι ήδη
@@ -12,16 +14,16 @@ requirements.txt τα requirements για να τρέξει το run.py
 app file με τα templates (HTML)
 
 Τρόπος Εκτέλεσης:
+
 1. Download των αρχείων
 2. Extract των αρχείων
 3. CMD: CD στο directory του hospital_management
-4. # Command:
-To Run Docker-compose
+4. docker-compose up --build
 ```
-# Flask run on port 5000
-docker-compose up
-```
-Τρόπος Χρήσης: 
+5. Σε ένα browser: localhost:5000
+
+Τρόπος Χρήσης:
+
 Υπάρχουν 4 collection:
 1. users (RBAC)
 2. doctors
@@ -56,6 +58,7 @@ password: @dm1n
 5. ακύρωση ραντεβού
 
 Screenshots:
+
 Home:
 ![Screenshot (376)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/a75eeb01-0426-493a-8802-c8ae520c9f94)
 Admin Dashboard:
@@ -80,5 +83,3 @@ Patient Dashboard:
 ![Screenshot (387)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/c4313310-8a80-480c-afdd-bf898cc89e7c)
 Μετά τη διαγραφή του doctor από τον admin η προβολή ραντεβού signed in ως patient:
 ![Screenshot (388)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/5cb9ed23-b757-46f8-95fa-1da13c8a7947)
-
-
