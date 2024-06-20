@@ -54,7 +54,7 @@ Patient Dashboard:
 Προβολή ραντεβού:
 ![Screenshot (381)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/312d44d0-0696-4741-b9a8-6920ba667871)
 Προβολή λεπτομερειών:
-![Screenshot (385)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/4b757afb-4373-4b3f-8363-f7e62376e4a5)
+![Screenshot (386)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/38754e2d-135b-4e75-8277-e0b22b51f751)
 Προβολή ραντεβού signed in ως doctor:
 ![Screenshot (387)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/c4313310-8a80-480c-afdd-bf898cc89e7c)
 Μετά τη διαγραφή του doctor από τον admin η προβολή ραντεβού signed in ως patient:
