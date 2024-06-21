@@ -69,7 +69,7 @@ def patient_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
-#################### Routes ####################
+######################################## Routes ########################################
 
 # Home
 @app.route('/')
@@ -131,6 +131,7 @@ def register():
 
     return render_template('register.html')
 
+# Login
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -142,7 +143,7 @@ def login():
         # Admin login
         if username == 'admin' and password == '@dm1n':
             user_obj = User(username=user['username'], role=user['role'])
-            login_user(user_obj)
+            login_user(user_obj) # Session
             
             flash('Admin login successful!', 'success')
             return redirect(url_for('admin'))
@@ -169,7 +170,7 @@ def login():
 
             if doctor and doctor['password']== password:  
                 user_obj = User(username=user['username'], role=user['role'])
-                login_user(user_obj)           
+                login_user(user_obj) # Session           
 
                 flash('Login successful!', 'success')
             
@@ -181,6 +182,14 @@ def login():
             return redirect(url_for('login'))
 
     return render_template('login.html')
+
+#Logout
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    flash('You have been logged out.', 'success')
+    return redirect(url_for('home'))
 
 # Dashboards
 @app.route('/admin')
@@ -201,7 +210,7 @@ def doctor():
 def patient():
     return render_template('patient.html')
 
-################ Admin ################
+######################################## Admin ########################################
 
 # New Doctor
 @app.route('/admin/new_doctor', methods=['GET', 'POST'])
@@ -253,7 +262,7 @@ def new_doctor():
 
     return render_template('/admin/new_doctor.html')
 
-# Change dr's password
+# Change Dr's Password
 @app.route('/admin/change_doctor_password', methods=['GET', 'POST'])
 @login_required
 @admin_required
@@ -280,7 +289,7 @@ def change_doctor_password():
 
     return render_template('/admin/change_doctor_password.html')
 
-# Delete dr
+# Delete Dr
 @app.route('/admin/delete_doctor', methods=['GET', 'POST'])
 @login_required
 @admin_required
@@ -304,7 +313,7 @@ def delete_doctor():
 
     return render_template('/admin/delete_doctor.html')
 
-# Delete patient
+# Delete Patient
 @app.route('/admin/delete_patient', methods=['GET', 'POST'])
 @login_required
 @admin_required
@@ -328,9 +337,9 @@ def delete_patient():
         
     return render_template('/admin/delete_patient.html')
 
-######################### Doctor #########################
+######################################## Doctor ########################################
 
-# Change password
+# Change Password
 @app.route('/doctor/change_password', methods=['GET', 'POST'])
 @login_required
 @doctor_required
@@ -355,7 +364,7 @@ def change_password():
 
     return render_template('/doctor/change_password.html')
 
-# Change cost
+# Change Cost
 @app.route('/doctor/change_cost', methods=['GET', 'POST'])
 @login_required
 @doctor_required
@@ -371,6 +380,7 @@ def change_cost():
 
     return render_template('/doctor/change_cost.html')
 
+# View Appointments
 @app.route('/doctor/view_doctor_appointments', methods=['GET'])
 @login_required
 @doctor_required
@@ -381,7 +391,9 @@ def view_doctor_appointments():
     }))
     return render_template('doctor/view_doctor_appointments.html', appointments=view_doctor_appointments)
 
-################ patient ################
+######################################## Patient ########################################
+
+# Appointment
 @app.route('/patient/appointment')
 @login_required
 @patient_required
@@ -434,6 +446,7 @@ def book_appointment():
     
         reason = request.form.get('reason')
     
+        # Add new appointment
         appointments.insert_one({
             'patient_first_name': patient_first_name,
             'patient_last_name': patient_last_name,
@@ -451,7 +464,7 @@ def book_appointment():
         flash('Appointment added successfully!', 'success')
     
         return redirect(url_for('patient'))
-    else: ###################################
+    else:
         doctor_username = request.form.get('doctor_username')
         doctor_first_name = request.form.get('doctor_first_name')
         doctor_last_name = request.form.get('doctor_last_name')
@@ -468,7 +481,8 @@ def book_appointment():
                                time=time,
                                specialty=specialty,
                                reason=reason)
-    
+
+#View Appointments
 @app.route('/patient/view_appointments', methods=['GET'])
 @login_required
 @patient_required
@@ -479,33 +493,29 @@ def view_appointments():
     }))
     return render_template('patient/view_appointments.html', appointments=view_appointments)
 
+# Appointment Info
 @app.route('/patient/appointment_info/<appointment_id>', methods=['GET'])
 @login_required
 @patient_required
 def appointment_info(appointment_id):
     appointment = appointments.find_one({"_id": ObjectId(appointment_id), "patient_username": current_user.username})
+
+    # The cost can always be changed by doctor/admin
     doctor_username = appointment['doctor_username']
     doctor = doctors.find_one({"username": doctor_username})
     cost = doctor['cost']
     return render_template('patient/appointment_info.html', appointment=appointment, cost=cost)
 
+# Cancel Appointment
 @app.route('/patient/cancel_appointment/<appointment_id>', methods=['POST'])
 @login_required
 @patient_required
 def cancel_appointment(appointment_id):
+    # Delete appointment from db
     appointments.delete_one({'_id': ObjectId(appointment_id)})
     flash('Appointment canceled successfully!', 'success')
 
     return redirect(url_for('view_appointments'))
-
-#Logout
-@app.route('/logout')
-@login_required
-def logout():
-    logout_user()
-    flash('You have been logged out.', 'success')
-    return redirect(url_for('home'))
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
