@@ -71,7 +71,7 @@ Doctor Dashboard:
 Register:
 ![Screenshot (381)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/edeeba9d-2bcc-45b7-9a98-1cf97442fff3)
 Patient Dashboard:
-![Screenshot (367)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/1642c5ff-9a58-4f9e-bc42-d67921c82095)
+![Screenshot (55)](https://github.com/user-attachments/assets/7ccf136f-74b1-412b-8049-84fbeae25f69)
 Αναζήτηση ραντεβού
 ![Screenshot (383)](https://github.com/despoinaSkourtanioti/YpoxreotikiErgasia24_E20148_Skourtanioti_Despoina/assets/137726116/81244650-55c4-4cad-a4ed-0fb09d3e7a9d)
 Κράτηση ραντεβού
